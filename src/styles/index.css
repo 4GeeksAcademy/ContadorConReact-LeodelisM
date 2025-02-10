@@ -9,3 +9,12 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.seconds-counter-item {
+    font-size: 5rem;
+    background-color: pink;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px grey;
+}

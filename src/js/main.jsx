@@ -11,8 +11,18 @@ import '../styles/index.css'
 // components
 import Home from './components/Home';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
+let segundosIniciales = (new Date()).getTime() / 1000;
+
+setInterval(
+  () => {
+    let segundosRender = (new Date()).getTime() / 1000;
+    let diferencia = Math.floor(segundosRender - segundosIniciales);
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      <React.StrictMode>
+        <Home seconds={diferencia}/>
+      </React.StrictMode>,
+    )
+  },
+  1000
 )
+
