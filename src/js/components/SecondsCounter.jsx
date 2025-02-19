@@ -1,4 +1,5 @@
-
+import { AiTwotoneClockCircle } from "react-icons/ai";
+ 
 export default function SecondsCounter(props) {
     let intSeconds = parseInt(props.seconds);
 
@@ -18,7 +19,7 @@ export default function SecondsCounter(props) {
     return (
         <div className="d-flex flex-row justify-content-center bg-danger-subtle gap-1 p-2 mt-5 seconds-counter" style={{minHeight: "100px"}}>
             <div className="seconds-counter-item seconds-counter-icon">
-                O
+             < AiTwotoneClockCircle /> 
             </div>
             <div className="seconds-counter-item">{cientomiles}</div>
             <div className="seconds-counter-item">{diezmiles}</div>
@@ -30,4 +31,4 @@ export default function SecondsCounter(props) {
     );
 
 
-}
+};
